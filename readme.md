@@ -15,7 +15,7 @@ $ npm install --global bin-version-check
 ## Usage
 
 ```
-$ bin-version-check-cli --help
+$ bin-version-check --help
 
   Usage
     $ bin-version-check <binary> <semver-range>
