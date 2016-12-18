@@ -8,7 +8,7 @@ Useful when you have a thing that only works with specific versions of a binary.
 ## Install
 
 ```
-$ npm install --global bin-version-check
+$ npm install --global bin-version-check-cli
 ```
 
 
