@@ -21,7 +21,7 @@ $ bin-version-check --help
     $ bin-version-check <binary> <semver-range>
 
   Options
-    --args  CLI args to get binary version (Can be set multiple times)  [Default: --version]
+    --args  CLI args to get binary version (Can be set multiple times) [Default: --version]
 
   Example
     $ curl --version
@@ -40,4 +40,4 @@ $ bin-version-check --help
 
 ## License
 
-MIT © [Sindre Sorhus](http://sindresorhus.com)
+MIT © [Sindre Sorhus](https://sindresorhus.com)
