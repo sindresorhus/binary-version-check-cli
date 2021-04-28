@@ -4,13 +4,11 @@
 
 Useful when you have a thing that only works with specific versions of a binary.
 
-
 ## Install
 
 ```
 $ npm install --global bin-version-check-cli
 ```
-
 
 ## Usage
 
@@ -32,12 +30,6 @@ $ bin-version-check --help
   Exits with code 0 if the semver range is satisfied and 1 if not
 ```
 
-
 ## Related
 
 - [bin-version-check](https://github.com/sindresorhus/bin-version-check) - API for this module
-
-
-## License
-
-MIT © [Sindre Sorhus](https://sindresorhus.com)

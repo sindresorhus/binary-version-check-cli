@@ -1,8 +1,7 @@
 #!/usr/bin/env node
-'use strict';
-const meow = require('meow');
-const arrify = require('arrify');
-const binVersionCheck = require('bin-version-check');
+import meow from 'meow';
+import arrify from 'arrify';
+import binaryVersionCheck from 'bin-version-check';
 
 const cli = meow(`
 	Usage
@@ -26,4 +25,4 @@ if (cli.flags.args) {
 	cli.flags.args = arrify(cli.flags.args);
 }
 
-binVersionCheck(binary, semverRange, cli.flags);
+binaryVersionCheck(binary, semverRange, cli.flags);
