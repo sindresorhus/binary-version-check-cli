@@ -1,9 +1,9 @@
 {
-	"name": "bin-version-check-cli",
+	"name": "binary-version-check-cli",
 	"version": "4.0.0",
 	"description": "Check whether a binary version satisfies a semver range",
 	"license": "MIT",
-	"repository": "sindresorhus/bin-version-check-cli",
+	"repository": "sindresorhus/binary-version-check-cli",
 	"funding": "https://github.com/sponsors/sindresorhus",
 	"author": {
 		"name": "Sindre Sorhus",
@@ -12,9 +12,8 @@
 	},
 	"type": "module",
 	"bin": {
-		"bin-version-check": "./cli.js"
+		"binary-version-check": "./cli.js"
 	},
-	"sideEffects": false,
 	"engines": {
 		"node": ">=18"
 	},
@@ -38,7 +37,6 @@
 		"validate"
 	],
 	"dependencies": {
-		"arrify": "^3.0.0",
 		"binary-version-check": "^6.1.0",
 		"meow": "^13.2.0"
 	},
