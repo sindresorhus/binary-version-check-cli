@@ -1,6 +1,6 @@
 {
 	"name": "binary-version-check-cli",
-	"version": "4.0.0",
+	"version": "4.1.0",
 	"description": "Check whether a binary version satisfies a semver range",
 	"license": "MIT",
 	"repository": "sindresorhus/binary-version-check-cli",
