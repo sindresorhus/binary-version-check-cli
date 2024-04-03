@@ -6,8 +6,8 @@ Useful when you have a thing that only works with specific versions of a binary.
 
 ## Install
 
-```
-$ npm install --global bin-version-check-cli
+```sh
+npm install --global bin-version-check-cli
 ```
 
 ## Usage
@@ -32,4 +32,4 @@ $ bin-version-check --help
 
 ## Related
 
-- [bin-version-check](https://github.com/sindresorhus/bin-version-check) - API for this module
+- [binary-version-check](https://github.com/sindresorhus/binary-version-check) - API for this package

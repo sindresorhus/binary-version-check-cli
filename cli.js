@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 import meow from 'meow';
-import arrify from 'arrify';
-import binaryVersionCheck from 'bin-version-check';
+import binaryVersionCheck from 'binary-version-check';
 
 const cli = meow(`
 	Usage
@@ -17,12 +16,19 @@ const cli = meow(`
 	  curl 7.30.0 doesn't satisfy the version requirement of >=8
 
 	Exits with code 0 if the semver range is satisfied and 1 if not
-`);
+`, {
+	importMeta: import.meta,
+	flags: {
+		args: {
+			type: 'string',
+			default: [
+				'--version',
+			],
+			isMultiple: true,
+		},
+	},
+});
 
 const [binary, semverRange] = cli.input;
-
-if (cli.flags.args) {
-	cli.flags.args = arrify(cli.flags.args);
-}
 
 binaryVersionCheck(binary, semverRange, cli.flags);
